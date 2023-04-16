@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"> <!--lang="zh-Hant"表示是繁體中文-->
+	<head>
+		<!--<meta> tag 用來描述 HTML 文件 (document) 的元資訊 (metadata)，透過 <meta> 我們可以設定很多不同類型的網頁資訊。-->
+		<meta charset="UTF-8"><!--HTML <meta charset="utf-8"> 標籤 (tag) - 指定網頁所使用的編碼-->
+		<meta name="description" content="Free Web Tutorial"><!--HTML <meta name="description" content=""> 標籤 (tag) - 指定網頁描述說明。
+		<meta> description 用來簡短說明你的網頁內容，通常是用來給搜尋引擎 (Google) 爬的，會用來顯示在搜尋結果中。-->
+		<meta name="keywords" content="HTML,CSS,JavaScript"><!--HTML <meta name="keywords" content=""> 標籤 (tag) - 說明網頁關鍵字
+		<meta> keywords 用來描述你的網頁內容有哪些關鍵字詞，通常是用來給搜尋引擎 (Google) 爬的，幫助搜尋引擎理解你的網頁，你可以用逗號 (comma) 來分隔開不同的關鍵字。
+		Google 有說過它現在已經不看 meta keywords 的內容了 ，簡單來說就是 keywords 完全沒用了，但你可以將關鍵字放在 meta description 中。-->
+		<meta name="author" content="Mike"><!--HTML <meta name="author" content=""> 標籤 (tag) - 說明網頁的作者資訊
+		<meta> author 用來指定作者或頁面擁有人資訊。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--HTML <meta name="viewport" content=""> 標籤 (tag) - 設定手機行動版網頁的 viewport 資訊-->
+		<!--width=device-width 指定瀏覽器頁面的寬度同裝置 (device) 的寬度。initial-scale=1.0 指定畫面初始縮放比例為 100%，即不放大也不縮小。-->
+		<!--minimum-scale=1 設定畫面最小的縮放比例為 1， maximum-scale=1 設定畫面最大的縮放比例為 1，都設為 1 的意思其實就是說不能縮放-->
+		<!--user-scalable 用來設定是否允許使用者改變縮放比例，user-scalable=no 就是不允許縮放-->
+		<meta http-equiv="refresh" content=";"><!--HTML <meta http-equiv="refresh" content=""> 標籤 (tag) - 自動跳轉網頁。
+		如果不加 url 參數則是定時刷新頁面的意思<meta http-equiv="refresh" content="5; url=https://www.fooish.com">-->
+		<meta name="robots" content=""><!--HTML <meta name="robots" content="noindex, noarchive, nofollow"> 標籤 (tag) - 禁止網頁被搜尋引擎索引收錄
+		<meta> robots 標記讓你可以以針對特定網頁控管應如何將各個網頁納入索引並顯示在搜尋引擎的 (Google) 搜尋結果中。
+		noindex: 不要在搜尋結果中顯示這個網頁
+		nofollow: 不要追蹤這個網頁上的連結
+		none: 相當於 noindex, nofollow
+		noarchive: 不要在搜索結果中顯示快取連結
+		nosnippet: 不要在搜尋結果中顯示這個網頁的文字摘要或影片預覽畫面
+		notranslate: 不要在搜尋結果中提供這個網頁的翻譯
+		noimageindex: 不為這個網頁上的圖片建立索引
+		unavailable_after: [date/time]: 在指定的日期/時間後不在搜尋結果中顯示這個網頁
+		all: 預設值，等同於 index, follow
+		<meta name="robots" content="noindex, nofollow">
+		-->
+		<title>專題計畫進度時間表</title>
+		<link rel="stylesheet" href="project_style.css"><!--連結css檔案-->
+		<!--<base href="https://examples.com/somedir/">設定根目錄-->
+	</head>
+	<body>
+		<div>
+			<table class="table2">
+				<caption><h1><span>專題計畫</span></h1></caption>
+				<colgroup>
+					<col span="1" class="one-bg">
+					<col span="1" class="two-bg">
+					<col span="1" class="three-bg">
+				</colgroup>
+				<thead  class='trtd_style_header'>
+					<tr>
+						<td><p><h3><span>日期時間</span></h3></p></td>
+						<td><p><h3><span>預期計畫</span></h3></p></td>
+						<td><p><h3><span>實際進度說明</span></h3></p></td>
+					</tr>
+				</thead>
+				<tbody class='trtd_style_center'>
+					<div class="shadowbox">
+					  <p>paragraph 1</p>
+					  <p>paragraph 2</p>
+					  <p>paragraph 3</p>
+					</div>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<table class="table3">
+				<caption><h1><span>專題計畫</span></h1></caption>
+				<colgroup>
+					<col span="1" class="one-bg">
+					<col span="1" class="two-bg">
+					<col span="1" class="three-bg">
+				</colgroup>
+				<thead  class='trtd_style_header'>
+					<tr>
+						<td><p><h3><span>日期時間</span></h3></p></td>
+						<td><p><h3><span>預期計畫</span></h3></p></td>
+						<td><p><h3><span>實際進度說明</span></h3></p></td>
+					</tr>
+				</thead>
+				<tbody class='trtd_style_center'>
+					<tr>
+						<td><p>2021/09/24</P></td>
+						<td>
+							<div>
+								<ul>
+								  <li>Pytorch簡單範例操作。</li>
+								  <li>目前爬取道的資料型態是一整天所有個股的成交資訊，因此要將爬取到的證券資料整理成單一個股一筆json資料。</li>
+								</ul>
+							</div>
+						</td>
+						<td><!--在這裡填寫實際進度--></td>
+					</tr>
+					<tr>
+						<td><p>2021/10/01</P></td>
+						<td>
+							<div>
+								<ul>
+								  <li>Pytorch簡單範例操作。</li>
+								  <li>以目前得到的個股每日成交價、成交量等資訊，透過程式分析轉換成常用的技術指標儲存，例如五日線、十日線、乖離率、KD值等一切可能有作為分析價值的指標。</li>
+								</ul>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/10/08</P></td>
+						<td>
+							<div>
+								<ul>
+								  <li>Pytorch簡單範例操作。</li>
+								  <li>以目前擁有的大數據資料進行回測分析。</li>
+								</ul>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/10/15</P></td>
+						<td>
+							<div>
+								<ul>
+								  <li>以目前擁有的大數據資料進行回測分析。</li>
+								</ul>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/10/22</P></td>
+						<td>
+							<ul>
+								<li>以目前擁有的大數據資料進行回測分析。</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/10/29</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/11/05</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/11/12</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/11/19</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/11/26</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/12/03</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/12/10</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/12/17</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/12/24</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>2021/12/31</P></td>
+						<td>預期計畫</td>
+						<td></td>
+					</tr>
+					<tr class='trtd_style_buttom'>
+						<td colspan = '3'><p>底部</p></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </body>
+	<footer>
+	</footer>
+</html>
