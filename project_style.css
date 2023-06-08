@@ -1,0 +1,109 @@
+col.one-bg{
+	width:100px;
+	overflow:hidden;/*碰到邊緣自動縮減*/
+	background-color: #FFFFB9;
+}
+
+col.two-bg{
+	width:50%;
+	overflow:hidden;
+	background-color: #C1FFE4;
+}
+col.three-bg{
+	width:50%;
+	overflow:hidden;
+	background-color: #FFE4CA;
+}
+table.table1{
+	width:80%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border:3px #cccccc solid;
+}
+table.table2{
+	width:80%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border:3px #FFD382 groove;
+}
+table.table3{
+	width:80%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border:8px #FFD382 groove;
+}
+thead.trtd_style_header{
+	margin: 0 auto;
+}
+thead.trtd_style_header tr{
+	width:100%;
+}
+thead.trtd_style_header td{
+	border:3px #00CACA groove;
+	height:30px;
+	text-align:center; /*水平置中*/
+	vertical-align:middle; /*垂直置中*/
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+thead.trtd_style_header p{
+	text-align:center; /*水平置中*/
+	vertical-align:middle; /*垂直置中*/
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+tbody.trtd_style_center{
+	margin: 0 auto;
+}
+tbody.trtd_style_center tr{
+	width:100%;
+}
+tbody.trtd_style_center td{
+	border:3px #FFED97 groove;
+	height:100px;
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+tbody.trtd_style_center ul{
+	display: inline-block;
+}
+tbody.trtd_style_center li{ 
+	padding: 5px 20px 5px 5px;
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+tbody.trtd_style_center p{ 
+	text-align:center; /*水平置中*/
+	vertical-align:middle; /*垂直置中*/
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+/*
+.ul_style_center{
+	float:left;
+	left: 50%;
+	position: relative;
+}*/
+/*
+.ul_style_center{
+	text-align: center;
+}
+.ul_style_center ul{
+	display: inline-block;
+}*/
+
+tr.trtd_style_buttom{
+	width:100%;
+}
+tr.trtd_style_buttom td{
+	border:3px #00CACA groove;
+	height:30px;
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+tr.trtd_style_buttom p{
+	text-align:center; /*水平置中*/
+	vertical-align:middle; /*垂直置中*/
+	word-wrap:break-word;/*空間不夠自動換行*/
+}
+.shadowbox {
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
